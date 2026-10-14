@@ -47,6 +47,8 @@ A bug in the evaluation itself was also found and fixed (numpy integers were com
 - False positives: in model names like *HV-K220-**4A***, "4A" is read as a current of 4 A
 - Every new manufacturer would need new rules, so it does not scale
 
+![Findings from the notebook](docs/findings.png)
+
 ## Maintenance assistant (RAG): early version
 
 A technician asks a question in plain language, e.g. *"Seal leakage alarm on my pump. What should I do?"*
@@ -66,6 +68,10 @@ An evaluation set of 36 questions with known answers and sections is included. E
 | `data/raw/manuals/` | 4 installation, operation and maintenance manuals |
 | `data/raw/scans/` | 4 datasheets as noisy, rotated scans (no text layer) |
 | `data/ground_truth/` | Correct values for all datasheets + 36 question/answer pairs for the manuals |
+
+The raw documents, organized by type:
+
+![Raw data folders](docs/data_folders.png)
 
 ## Tech stack
 
